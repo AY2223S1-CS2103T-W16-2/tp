@@ -13,7 +13,7 @@ public class Messages {
     public static final String MESSAGE_ITEM_SORTED_OVERVIEW = "%1$d item sorted!";
     public static final String MESSAGE_ITEM_FILTERED_OVERVIEW = "%1$d item after filtering!";
 
-    // Plural
+    // Plural or Zero
     public static final String MESSAGE_ITEMS_LISTED_OVERVIEW = "%1$d items listed!";
     public static final String MESSAGE_ITEMS_SORTED_OVERVIEW = "%1$d items sorted!";
     public static final String MESSAGE_ITEMS_FILTERED_OVERVIEW = "%1$d items after filtering!";

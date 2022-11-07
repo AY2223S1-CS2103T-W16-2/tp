@@ -31,9 +31,9 @@ public class FindCommand extends Command {
         requireNonNull(model);
         model.updateFilteredItemList(predicate);
         return CommandResult.from(
-                String.format(model.getCurrentList().size() > 1
-                                ? Messages.MESSAGE_ITEMS_FILTERED_OVERVIEW
-                                : Messages.MESSAGE_ITEM_FILTERED_OVERVIEW,
+                String.format(model.getCurrentList().size() == 1
+                                ? Messages.MESSAGE_ITEM_FILTERED_OVERVIEW
+                                : Messages.MESSAGE_ITEMS_FILTERED_OVERVIEW,
                         model.getCurrentList().size()));
     }
 
