@@ -40,7 +40,8 @@ public class FilterTagCommand extends Command {
 
         model.updateFilteredItemList(predicate);
         String primaryMessage = "Filtered by tag:";
-        String secondaryMessage = String.format("%s items filtered", model.getCurrentList().size());
+        String secondaryMessage = String.format(model.getCurrentList().size() > 1 ? "%s items filtered" : "%s item "
+                + "filtered");
         return CommandResult.from(new FilterByTag(tag, primaryMessage, secondaryMessage));
     }
 
