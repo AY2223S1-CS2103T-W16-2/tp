@@ -11,7 +11,7 @@ public class Messages {
     // Singular
     public static final String MESSAGE_ITEM_LISTED_OVERVIEW = "%1$d item listed!";
     public static final String MESSAGE_ITEM_SORTED_OVERVIEW = "%1$d item sorted!";
-    public static final String MESSAGE_ITEM_FILTERED_OVERVIEW = "%1$d items after filtering!";
+    public static final String MESSAGE_ITEM_FILTERED_OVERVIEW = "%1$d item after filtering!";
 
     // Plural
     public static final String MESSAGE_ITEMS_LISTED_OVERVIEW = "%1$d items listed!";
