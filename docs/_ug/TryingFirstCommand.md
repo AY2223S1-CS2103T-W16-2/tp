@@ -4,6 +4,8 @@ To let you become more familiar with FoodRem, let's practice executing some [[ c
 
 To start off, let's try out the `new` command! This command lets you add an [Item](#item) to FoodRem.
 
+{% include page-break.html %}
+
 One of the available commands in FoodRem is the command to create a new item.
 
 **Format:** `new n/ITEM_NAME [qty/QUANTITY] [u/UNIT] [bgt/BOUGHT_DATE] [exp/EXPIRY_DATE] [p/PRICE] [r/REMARKS]`
@@ -22,17 +24,16 @@ Notice that there is a pair of square brackets `[]` surrounding some [[ paramete
 The [Placeholder](#placeholders) section covers the restrictions for respective placeholders. For example, the date format of BOUGHT_DATE, certain characters you cannot use and the limit and precision of numbers.
 ```
 
+{% include page-break.html %}
+
 **Let's try an example!**
 
 Suppose you just bought 30 kg worth of potatoes, today is 5th September 2022, and you do not feel the need to record an [[ expiry-date:expiry date ]], price or remarks for this item.
 
-`ITEM_NAME`: Potatoes
-
-`QUANTITY`: 30
-
-`UNIT`: kg
-
-`BOUGHT_DATE`: 05-09-2022
+`ITEM_NAME`: Potatoes<br>
+`QUANTITY`: 30<br>
+`UNIT`: kg<br>
+`BOUGHT_DATE`: 05-09-2022<br>
 
 The command you would like to enter into the command box would be:
 
@@ -65,6 +66,8 @@ However, note that the following executions are invalid:
 Find out more about restrictions in the sections [Flags](#flags), [Placeholders](#placeholders) and [Commands](#commands).
 
 ---
+
+{% include page-break.html %}
 
 Let's try out another command -- the `inc` command! `inc` lets you increment the quantity of an item.
 

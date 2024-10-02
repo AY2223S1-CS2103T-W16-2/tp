@@ -434,7 +434,7 @@ article.post {
 
       @media print {
         // Bug in Chrome when having multiple columns for printing
-        columns: 1;
+        columns: 2;
       }
     }
 
