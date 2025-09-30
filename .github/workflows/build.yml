@@ -10,7 +10,7 @@ on:
 
 jobs:
   jarfile:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     outputs:
       upload_url: ${{ steps.create_release.outputs.upload_url }}
     steps:
@@ -53,7 +53,7 @@ jobs:
           asset_content_type: application/java-archive
   pdfs:
     needs: jarfile
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Set up repository
         uses: actions/checkout@v5
