@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Set up repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v5
       - name: Set up PATH
         run: echo "$HOME/.gem/ruby/2.7.0/bin" >> $GITHUB_PATH
       - name: Set up server dependencies
