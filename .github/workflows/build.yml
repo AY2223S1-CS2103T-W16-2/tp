@@ -21,10 +21,12 @@ jobs:
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v1
       - name: Setup JDK 11
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v5
         with:
+          distribution: zulu
           java-version: 11
           java-package: jdk+fx
+          cache: gradle
       - name: Create JAR file
         run: ./gradlew shadowJar
       - name: Generate tag name from time
