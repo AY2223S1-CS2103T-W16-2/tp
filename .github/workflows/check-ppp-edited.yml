@@ -1,13 +1,14 @@
 name: Check PPP is updated
 
-on: [workflow_dispatch, pull_request]
+on:
+  - workflow_dispatch
 
 jobs:
   check-ppp:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Set up repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v5
       - name: Query GraphQL API
         uses: octokit/graphql-action@v2.x
         id: get_latest_prs
