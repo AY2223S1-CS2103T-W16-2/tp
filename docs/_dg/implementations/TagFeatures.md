@@ -67,13 +67,14 @@ When storing a tag, these are the alternatives considered.
 #### Creating a Tag
 
 ##### Overview
+
 The `newtag` command creates a new tag in FoodRem which can be subsequently used in another command (`tag`) to tag items for classification.
 
 Here is the sequence diagram showing the interactions between the different components during a `newtag` command.
 ![NewTagSequenceDiagram](images/NewTagSequenceDiagram.png)
 
-
 ##### Feature Details
+
 1. The user specifies a tag name for the new tag when creating the new tag
 1. If the tag name of the new tag is not provided, the user will be prompted to enter the command correctly via an error message.
 1. If the new tag ( tag with the same tag name)  already exists in `model`, an error is thrown to inform the user that the tag already exists.
@@ -82,6 +83,7 @@ Here is the sequence diagram showing the interactions between the different comp
 1. If Step 5 completes without any exceptions, a new tag is successfully created and stored inside the tag storage.
 
 ##### Feature Considerations
+
 `Tag` is implemented as a separate class (rather than having it as a set of `String` in `Item`). With this, we could have a  `newtag` command so that when we can create a `Tag` object independently. This specific `Tag` object can be referenced by different `Item` objects. We will also hence be able to check whether `Tag` objects of the same name has been created before and if so, prevent these duplicate `Tag` objects from being created. Thus, if different `Item` objects wants to reference `Tag` of the same name, they will all reference to the same `Tag` object.  Moreover, this gives us more flexibility in creating other commands such as `deletetag` or `renametag` which we can apply to a specific tag and updates made to this tag  will be reflected across all `Item` objects that reference this `Tag` object.
 
 #### Tagging an Item
@@ -95,7 +97,6 @@ The `tag item` command tags an item with the provided tag name in FoodRem. If bo
 Here is the activity diagram showing the process of the `tag` command:
 
 ![TagItemActivityDiagram](images/TagItemActivityDiagram.png)
-
 
 Here is the sequence diagram showing the interactions between the different components during a `tag` command.
 
@@ -123,7 +124,6 @@ The `filtertag` command filters the Item List for items tagged with the specifie
 Here is the activity diagram showing the process of the `tag` command:
 
 ![FilterTagItemActivityDiagram](images/FilterTagActivityDiagram.png)
-
 
 Here is the sequence diagram showing the interactions between the different components during a `tag` command.
 

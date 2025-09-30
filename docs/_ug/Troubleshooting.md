@@ -14,7 +14,6 @@ The JAR file not launching even after double-clicking the file.
 1. Navigate to the location where "foodrem.jar" is stored within your terminal.
 1. On your terminal, run `java -jar "foodrem.jar"`
 
-
 **Problem:**
 
 The JAR file not launching in Windows Subsystem for Linux (WSL).
@@ -22,6 +21,7 @@ The JAR file not launching in Windows Subsystem for Linux (WSL).
 ```note
 WSL does not support GUI applications by default.
 ```
+
 **Solution:**
 
 1. Our recommendation is to run FoodRem on Windows and not on WSL.
