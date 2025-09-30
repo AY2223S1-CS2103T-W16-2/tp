@@ -1,6 +1,7 @@
 name: Check PPP is updated
 
-on: [workflow_dispatch, pull_request]
+on:
+  - workflow_dispatch
 
 jobs:
   check-ppp:
