@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8" ?>
 <?import seedu.foodrem.ui.TestFxmlObject?>
-<fx:root xmlns:fx="http://javafx.com/fxml" type="seedu.foodrem.ui.TestFxmlObject"
-         xmlns="http://javafx.com/javafx">
+<fx:root
+    xmlns:fx="http://javafx.com/fxml"
+    type="seedu.foodrem.ui.TestFxmlObject"
+    xmlns="http://javafx.com/javafx"
+>
     <text>Hello World!</text>
 </fx:root>
