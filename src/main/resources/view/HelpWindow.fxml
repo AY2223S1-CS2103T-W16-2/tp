@@ -11,7 +11,7 @@
     resizable="false"
     title="Help"
     type="javafx.stage.Stage"
-    xmlns="http://javafx.com/javafx/11"
+    xmlns="http://javafx.com/javafx/17"
     xmlns:fx="http://javafx.com/fxml/1"
 >
   <icons>
