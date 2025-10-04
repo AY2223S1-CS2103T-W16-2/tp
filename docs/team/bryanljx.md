@@ -3,7 +3,7 @@ layout: ppp
 title: Bryan Lim Jing Xiang's Project Portfolio Page
 ---
 
-<!-- markdownlint-disable-next-line blanks-around-headers -->
+<!-- markdownlint-disable-next-line blanks-around-headings -->
 ### Project: FoodRem
 {: .no_toc}
 

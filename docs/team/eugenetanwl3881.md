@@ -3,7 +3,7 @@ layout: ppp
 title: Eugene Tan's Project Portfolio Page
 ---
 
-<!-- markdownlint-disable-next-line blanks-around-headers -->
+<!-- markdownlint-disable-next-line blanks-around-headings -->
 ### Project: FoodRem
 {: .no_toc}
 

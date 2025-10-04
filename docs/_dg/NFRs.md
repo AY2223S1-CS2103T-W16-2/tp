@@ -1,5 +1,5 @@
 <!-- markdownlint-disable-file first-line-h1 -->
-1. The product should work on any mainstream [[ operating-system-os:OS ]] (Windows, macOS, Linux) that has Java 11 or above installed.
+1. The product should work on any mainstream [[ operating-system-os:OS ]] (Windows, macOS, Linux) that has Java 17 or above installed.
 1. The product should be able to hold up to 1000 items without noticeable sluggishness in performance for typical usage.
 1. A user with above average typing speed for regular, English text (not code nor system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
 1. A user should not experience excessive sluggishness when searching and sorting items.

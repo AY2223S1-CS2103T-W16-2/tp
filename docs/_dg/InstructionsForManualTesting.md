@@ -19,7 +19,7 @@ These instructions only provide a starting point for testers to work on; testers
 
 `new n/Potato qty/2 u/kg bgt/10-10-2022`
 
-Expected Output in the [[ item-list-box:Item List Box ]]: 
+Expected Output in the [[ item-list-box:Item List Box ]]:
 New item added into the list.
 
 Expected Output in the [[ command-output-box:Command Output Box ]]:
@@ -32,12 +32,12 @@ Error message for invalid command format.
 
 #### List all items
 
-Prerequisite: 
+Prerequisite:
 There is at least 1 item stored in FoodRem.
 
 `list`
 
-Expected Output in the [[ item-list-box:Item List Box ]]: 
+Expected Output in the [[ item-list-box:Item List Box ]]:
 All items stored in FoodRem is displayed.
 
 Expected Output in the [[ command-output-box:Command Output Box ]]:
@@ -45,7 +45,7 @@ Listed all items message.
 
 #### Search for an Item
 
-Prerequisite: 
+Prerequisite:
 There is only one item named `Potato` stored in FoodRem.
 
 `find Potato`
@@ -59,7 +59,7 @@ Expected Output in the [[ command-output-box:Command Output Box ]]:
 `find strawberry`
 
 Expected Output in the [[ item-list-box:Item List Box ]]:
-No items display 
+No items display
 
 Expected Output in the [[ command-output-box:Command Output Box ]]:
 0 items listed message.
@@ -69,9 +69,9 @@ Expected Output in the [[ command-output-box:Command Output Box ]]:
 Prerequisite:
 There are a few items stored in FoodRem and shown in the [[ item-list-box:Item List Box ]] with different names.
 
-`sort n/` 
+`sort n/`
 
-Expected Output in the [[ item-list-box:Item List Box ]]: 
+Expected Output in the [[ item-list-box:Item List Box ]]:
 Items are sorted in ascending alphabetical order based on name.
 
 Expected Output [[ command-output-box:Command Output Box ]]:
@@ -79,26 +79,26 @@ Items sorted message.
 
 #### View the information of an Item
 
-Prerequisite: 
+Prerequisite:
 There is at least 1 item shown in the [[ item-list-box:Item List Box ]].
 
-`view 1` 
+`view 1`
 
-Expected Output in the [[ item-list-box:Item List Box ]]: 
+Expected Output in the [[ item-list-box:Item List Box ]]:
 Still showing the same list as before.
 
 Expected Output [[ command-output-box:Command Output Box ]]:
-Details of first item in Item List Box shown. 
+Details of first item in Item List Box shown.
 Displayed information includes the name, quantity, unit, bought date, expiry date, price, remarks and tags of items.
 
 #### Increment the quantity of an item
 
-Prerequisite: 
+Prerequisite:
 The first item in the Item List Box has a quantity of 1.
 
-`inc 1 qty/20` 
+`inc 1 qty/20`
 
-Expected Output in the [[ item-list-box:Item List Box ]]: 
+Expected Output in the [[ item-list-box:Item List Box ]]:
 Still showing the same list as before but with first item quantity increased by 20.
 
 Expected Output [[ command-output-box:Command Output Box ]]:
@@ -114,12 +114,12 @@ Incremented item quantity message with details of first item in Item List shown.
 
 #### Decrement the quantity of an item
 
-Prerequisite: 
+Prerequisite:
 The first item in the Item List Box has a quantity of 3.
 
-`dec 1 qty/2` 
+`dec 1 qty/2`
 
-Expected Output in the [[ item-list-box:Item List Box ]]: 
+Expected Output in the [[ item-list-box:Item List Box ]]:
 Still showing the same list as before but with first item quantity decreased by 2.
 
 Expected Output [[ command-output-box:Command Output Box ]]:
@@ -135,12 +135,12 @@ Decremented item quantity message with details of first item in Item List shown.
 
 #### Edit the information of an item
 
-Prerequisite: 
+Prerequisite:
 The first item in the [[ item-list-box:Item List Box ]] has a name of `Potato`.
 
-`edit 1 n/Tomato` 
+`edit 1 n/Tomato`
 
-Expected Output [[ item-list-box:Item List Box ]]: 
+Expected Output [[ item-list-box:Item List Box ]]:
 The `Potato` item has been renamed to `Tomato` and this is now reflected in the [[ item-list-box:Item List Box ]].
 
 Expected Output [[ command-output-box:Command Output Box ]]:
@@ -148,12 +148,12 @@ Item edited message with details of the edited item shown.
 
 #### Add a remark to an item
 
-Prerequisite: 
+Prerequisite:
 The first item in the [[ item-list-box:Item List Box ]] has no remarks.
 
-`rmk 1 r/For Party` 
+`rmk 1 r/For Party`
 
-Expected Output in the [[ item-list-box:Item List Box ]]: 
+Expected Output in the [[ item-list-box:Item List Box ]]:
 Same list as shown before.
 
 Expected Output [[ command-output-box:Command Output Box ]]:
@@ -252,7 +252,7 @@ Error message for renaming to duplicate name.
 
 #### Delete a Tag
 
-Prerequisite: 
+Prerequisite:
 A tag with a tag name `Food` currently exists in FoodRem.
 
 `deletetag n/Food`
@@ -265,7 +265,7 @@ Tag deleted details.
 
 #### Filter by a Tag
 
-Prerequisite: 
+Prerequisite:
 A tag with a tag name of `fruits` currently exists in FoodRem and is tagged to a few items.
 
 `filtertag n/fruits`
@@ -292,12 +292,12 @@ Statistics which include total cost incurred due to food wastage, top 3 common t
 
 `help`
 
-Expected Output: 
+Expected Output:
 The [[ help-window:Help Window ]] pops up and shows a general help message.
 
 `help new`
 
-Expected Output: 
+Expected Output:
 The [[ help-window:Help Window ]] pops up and shows a general help message with the help information for the `new` command.
 
 ### Reset
@@ -314,5 +314,5 @@ FoodRem reset success message.
 
 `exit`
 
-Expected Output: 
+Expected Output:
 FoodRem application closes.

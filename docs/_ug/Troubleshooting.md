@@ -14,7 +14,6 @@ The JAR file not launching even after double-clicking the file.
 1. Navigate to the location where "foodrem.jar" is stored within your terminal.
 1. On your terminal, run `java -jar "foodrem.jar"`
 
-
 **Problem:**
 
 The JAR file not launching in Windows Subsystem for Linux (WSL).
@@ -22,6 +21,7 @@ The JAR file not launching in Windows Subsystem for Linux (WSL).
 ```note
 WSL does not support GUI applications by default.
 ```
+
 **Solution:**
 
 1. Our recommendation is to run FoodRem on Windows and not on WSL.
@@ -33,8 +33,8 @@ The JAR file not launching in Linux machines running Wayland.
 **Solution:**
 
 ```info
-Under the hood, FoodRem uses JavaFX 11 to render the UI for the GUI. 
-Unfortunately, JavaFX 11 has poor support for Wayland which is why FoodRem is unable to support Wayland currently.
+Under the hood, FoodRem uses JavaFX 17 to render the UI for the GUI.
+Unfortunately, JavaFX 17 has poor support for Wayland which is why FoodRem is unable to support Wayland currently.
 ```
 
 1. FoodRem is only supported on machines with the following operating systems: Windows, macOS and Linux11. Please use a computer running on these operating systems.

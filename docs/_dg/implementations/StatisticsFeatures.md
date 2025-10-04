@@ -15,6 +15,7 @@ The `stats` command calculates and provides users a list of statistics relating 
 #### Displaying Statistics
 
 ##### Overview
+
 The `stats` command displays the calculated statistics based on the inventory by FoodRem.
 
 ##### Feature Details
