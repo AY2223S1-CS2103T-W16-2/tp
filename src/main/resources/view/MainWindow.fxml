@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8" ?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -10,25 +9,32 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.Scene?>
 <?import javafx.stage.Stage?>
-<fx:root xmlns:fx="http://javafx.com/fxml/1" type="javafx.stage.Stage"
-         xmlns="http://javafx.com/javafx/8" title="FoodRem" minWidth="840" minHeight="600" onCloseRequest="#handleExit">
+<fx:root
+    xmlns:fx="http://javafx.com/fxml/1"
+    type="javafx.stage.Stage"
+    xmlns="http://javafx.com/javafx/17"
+    title="FoodRem"
+    minWidth="840"
+    minHeight="600"
+    onCloseRequest="#handleExit"
+>
   <icons>
-    <Image url="@/images/foodrem.png"/>
+    <Image url="@/images/foodrem.png" />
   </icons>
   <scene>
     <Scene>
       <stylesheets>
-        <URL value="@Extensions.css"/>
-        <URL value="@FoodRem.css"/>
-        <URL value="@Fonts.css"/>
+        <URL value="@Extensions.css" />
+        <URL value="@FoodRem.css" />
+        <URL value="@Fonts.css" />
       </stylesheets>
 
       <VBox>
         <!-- Menu Bar -->
         <MenuBar fx:id="menuBar" VBox.vgrow="NEVER" styleClass="menu-bar">
           <Menu text="Menu">
-            <MenuItem fx:id="helpMenuItem" onAction="#handleHelp" text="Help"/>
-            <MenuItem onAction="#handleExit" text="Exit"/>
+            <MenuItem fx:id="helpMenuItem" onAction="#handleHelp" text="Help" />
+            <MenuItem onAction="#handleExit" text="Exit" />
           </Menu>
         </MenuBar>
 
@@ -36,18 +42,30 @@
         <HBox spacing="16" styleClass="main-body" VBox.vgrow="ALWAYS">
           <!-- Left Column -->
           <VBox spacing="12" VBox.vgrow="ALWAYS">
-            <StackPane VBox.vgrow="NEVER" fx:id="commandBoxPlaceholder" styleClass="command-placeholder"/>
-            <VBox fx:id="personList" styleClass="list-placeholder" VBox.vgrow="ALWAYS">
+            <StackPane
+                            VBox.vgrow="NEVER"
+                            fx:id="commandBoxPlaceholder"
+                            styleClass="command-placeholder"
+                        />
+            <VBox
+                            fx:id="personList"
+                            styleClass="list-placeholder"
+                            VBox.vgrow="ALWAYS"
+                        >
               <StackPane fx:id="itemListPanelPlaceholder" VBox.vgrow="ALWAYS" />
             </VBox>
           </VBox>
 
           <!-- Right Column -->
           <VBox spacing="12">
-            <StackPane VBox.vgrow="ALWAYS" fx:id="resultDisplayPlaceholder" styleClass="result-placeholder" />
+            <StackPane
+                            VBox.vgrow="ALWAYS"
+                            fx:id="resultDisplayPlaceholder"
+                            styleClass="result-placeholder"
+                        />
           </VBox>
         </HBox>
-        <StackPane fx:id="statusbarPlaceholder" VBox.vgrow="NEVER"/>
+        <StackPane fx:id="statusbarPlaceholder" VBox.vgrow="NEVER" />
       </VBox>
     </Scene>
   </scene>

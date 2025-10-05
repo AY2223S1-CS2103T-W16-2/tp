@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-file first-line-h1 -->
-**Q:** If I do not have Java 11, how do I install it on my computer? <br>
-**A:** You can navigate to this site [here](https://docs.oracle.com/en/java/javase/11/install/overview-jdk-installation.html) and download Java 11 according to your system’s specifications.
+**Q:** If I do not have Java 17, how do I install it on my computer? <br>
+**A:** You can navigate to this site [here](https://docs.oracle.com/en/java/javase/17/install/overview-jdk-installation.html) and download Java 17 according to your system’s specifications.
 
 **Q:** Do I need an internet connection to run FoodRem? <br>
 **A:** No, FoodRem can boot up and run all functionalities without an internet connection.

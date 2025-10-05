@@ -1,0 +1,43 @@
+{
+  "$schema": "https://www.schemastore.org/markdownlint.json",
+  "MD004": {
+    "style": "asterisk"
+  },
+  "MD009": {
+    "br_spaces": 0
+  },
+  "MD013": false,
+  "MD029": {
+    "style": "one"
+  },
+  "MD033": {
+    "allowed_elements": ["sub", "sup", "br", "kbd"]
+  },
+  "MD035": {
+    "style": "---"
+  },
+  "MD044": {
+    "names": [
+      "FoodRem",
+      "User Guide",
+      "Developer Guide",
+      "Command Input Box",
+      "Command Output Box",
+      "Item List Box"
+    ],
+    "code_blocks": false
+  },
+  "MD046": {
+    "style": "fenced"
+  },
+  "MD048": {
+    "style": "backtick"
+  },
+  "MD049": {
+    "style": "underscore"
+  },
+  "MD050": {
+    "style": "asterisk"
+  },
+  "MD051": false
+}

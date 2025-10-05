@@ -1,0 +1,5 @@
+{
+  "$schema": "https://www.schemastore.org/markdownlint.json",
+  "extends": "../../.markdownlint.json",
+  "MD041": false
+}
