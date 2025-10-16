@@ -9,6 +9,10 @@ awk '
         ret = 0
     }
     {
+        # Skip ../gradlew file
+        if ($1 == "../gradlew") {
+            next
+        }
         # Only warn for markdown files (*.md) to accomodate text editors
         # which do not properly handle trailing whitespace.
         # (e.g. GitHub web editor)
