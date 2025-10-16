@@ -26,6 +26,7 @@ test {
 }
 
 tasks.register('coverage', JacocoReport) {
+    dependsOn test
     sourceDirectories.from files(sourceSets.main.allSource.srcDirs)
     classDirectories.from files(sourceSets.main.output.collect {
         fileTree(dir: it, exclude: ['**/*.jar'])
