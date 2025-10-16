@@ -25,15 +25,12 @@ test {
     finalizedBy jacocoTestReport
 }
 
-task coverage(type: JacocoReport) {
+tasks.register('coverage', JacocoReport) {
     sourceDirectories.from files(sourceSets.main.allSource.srcDirs)
-    classDirectories.from files(sourceSets.main.output)
+    classDirectories.from files(sourceSets.main.output.collect {
+        fileTree(dir: it, exclude: ['**/*.jar'])
+    })
     executionData.from files(jacocoTestReport.executionData)
-    afterEvaluate {
-        classDirectories.from files(classDirectories.files.collect {
-            fileTree(dir: it, exclude: ['**/*.jar'])
-        })
-    }
     reports {
         html.required = true
         xml.required = true
