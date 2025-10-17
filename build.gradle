@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'checkstyle'
-    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'com.gradleup.shadow' version '8.3.0'
     id 'application'
     id 'jacoco'
 }
@@ -25,15 +25,13 @@ test {
     finalizedBy jacocoTestReport
 }
 
-task coverage(type: JacocoReport) {
+tasks.register('coverage', JacocoReport) {
+    dependsOn test
     sourceDirectories.from files(sourceSets.main.allSource.srcDirs)
-    classDirectories.from files(sourceSets.main.output)
+    classDirectories.from files(sourceSets.main.output.collect {
+        fileTree(dir: it, exclude: ['**/*.jar'])
+    })
     executionData.from files(jacocoTestReport.executionData)
-    afterEvaluate {
-        classDirectories.from files(classDirectories.files.collect {
-            fileTree(dir: it, exclude: ['**/*.jar'])
-        })
-    }
     reports {
         html.required = true
         xml.required = true
@@ -42,7 +40,7 @@ task coverage(type: JacocoReport) {
 
 dependencies {
     String jUnitVersion = '5.4.0'
-    String javaFxVersion = '17.0.7'
+    String javaFxVersion = '21.0.2'
 
     implementation group: 'org.openjfx', name: 'javafx-base', version: javaFxVersion, classifier: 'win'
     implementation group: 'org.openjfx', name: 'javafx-base', version: javaFxVersion, classifier: 'mac'
