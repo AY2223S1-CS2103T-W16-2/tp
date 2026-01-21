@@ -26,6 +26,8 @@ Given below is an UML diagram of `Tag` and the classes related to it:
 
 ![model_diagram](images/BetterModelClassDiagram.png)
 
+{% include page-break.html %}
+
 #### General Design Considerations
 
 When storing a tag, these are the alternatives considered.
