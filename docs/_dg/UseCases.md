@@ -26,6 +26,8 @@ Extensions:
 
 ---
 
+{% include page-break.html %}
+
 #### Use Case 2: Update Item in Inventory
 
 Preconditions: [[ item:Item ]] to edit exists in inventory.
@@ -53,6 +55,8 @@ Extensions:
   * Steps 3b1-3b2 are repeated until the command entered is correct. <br> Use case resumes from step 3.
 
 ---
+
+{% include page-break.html %}
 
 #### Use Case 3: Delete Item from Inventory
 
@@ -87,6 +91,8 @@ Preconditions: [[ tag:Tag ]] does not yet exist in FoodRem.
 
 Use case ends.
 
+{% include page-break.html %}
+
 Extensions:
 
 * 3a. If the tag name already exists in the inventory, FoodRem will throw an error.
@@ -119,6 +125,8 @@ Extensions:
   * Steps 3a1-3a2 are repeated until the command entered is correct. <br> Use case resumes from step 4.
 
 ---
+
+{% include page-break.html %}
 
 #### Use Case 6: Add Tag to Item
 
@@ -185,6 +193,8 @@ Extensions:
   * Steps 3a1-3a2 are repeated until the command entered is correct. <br>Use case resumes from step 4.
 
 ---
+
+{% include page-break.html %}
 
 #### Use Case 9: Increment/Decrement Quantity of Item
 
