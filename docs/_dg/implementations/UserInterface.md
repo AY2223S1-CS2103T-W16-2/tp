@@ -11,11 +11,14 @@ However, the Command Output Box needs to be able to have potentially different r
 
 * "Views" return a JavaFX `Node` object in order to place into the Command Output Box
 * "Models" represent data entities used in FoodRem. See the [Model Component](#model-component) section above for more information. The "models" that are concerned in the process of rendering outputs to the GUI are [[ item:items ]] and [[ tag:tags ]].
+{% include page-break.html %}
 * "View models" are not always present, and act as a bridge for when the data contained in a single "model" is not enough for the corresponding "view" to be generated. As a "view" can only be generated from a single "view model", when data from one or more "models" need to be processed and/or augmented before a "view" can be generated, the "view model" acts as a bridge to facilitate the process.
 
 #### Rendering Command Output
 
 [`UiView`]({{ page.master_branch }}/{{ page.main_src }}/views/UiView.java) is the main class responsible for rendering the view to the Command Output Box. This is achieved when a caller calls `UiView`'s `viewFrom` method. The method then calls the `from` method of one of nine "views", depending on the type of the object that was requested to be rendered.
+
+{% include page-break.html %}
 
 The nine "views" are as follows:
 

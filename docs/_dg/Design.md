@@ -30,6 +30,8 @@ The `.puml` files used to create diagrams in this document can be found in the [
 
 {% include_relative _dg/LogicComponent.md %}
 
+{% include page-break.html %}
+
 ### Model Component
 
 {% include_relative _dg/ModelComponent.md %}

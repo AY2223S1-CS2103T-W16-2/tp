@@ -58,9 +58,13 @@ This section shares useful information regarding the non-technical aspects of de
 
 {% include_relative _dg/UserStories.md %}
 
+{% include page-break.html %}
+
 ### Use Cases
 
 {% include_relative _dg/UseCases.md %}
+
+{% include page-break.html %}
 
 ### Non-Functional Requirements
 

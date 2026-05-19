@@ -146,6 +146,8 @@ The `sort` feature sorts the list of items currently displayed to the user by a 
 
 Currently, sorting is performed in ascending order. A future implementation will allow sorting either ascendingly or descendingly.
 
+{% include page-break.html %}
+
 ##### Feature Details
 
 1. The user can perform other commands that modify the presented item list, such as the `find` command.
