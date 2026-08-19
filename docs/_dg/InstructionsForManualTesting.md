@@ -64,6 +64,8 @@ No items display
 Expected Output in the [[ command-output-box:Command Output Box ]]:
 0 items listed message.
 
+{% include page-break.html %}
+
 #### Sort all items by an attribute
 
 Prerequisite:
@@ -91,6 +93,8 @@ Expected Output [[ command-output-box:Command Output Box ]]:
 Details of first item in Item List Box shown.
 Displayed information includes the name, quantity, unit, bought date, expiry date, price, remarks and tags of items.
 
+{% include page-break.html %}
+
 #### Increment the quantity of an item
 
 Prerequisite:
@@ -111,6 +115,8 @@ Still showing the same list as before but with first item quantity increased by 
 
 Expected Output [[ command-output-box:Command Output Box ]]:
 Incremented item quantity message with details of first item in Item List shown.
+
+{% include page-break.html %}
 
 #### Decrement the quantity of an item
 
@@ -146,6 +152,8 @@ The `Potato` item has been renamed to `Tomato` and this is now reflected in the 
 Expected Output [[ command-output-box:Command Output Box ]]:
 Item edited message with details of the edited item shown.
 
+{% include page-break.html %}
+
 #### Add a remark to an item
 
 Prerequisite:
@@ -176,6 +184,8 @@ Deleted item message and its details.
 
 Expected Output [[ command-output-box:Command Output Box ]]:
 Error message for invalid command format.
+
+{% include page-break.html %}
 
 ### Tags
 
@@ -250,6 +260,8 @@ Details of original and renamed tags.
 Expected Output [[ command-output-box:Command Output Box ]]:
 Error message for renaming to duplicate name.
 
+{% include page-break.html %}
+
 #### Delete a Tag
 
 Prerequisite:
@@ -287,6 +299,8 @@ No changes in the displayed items.
 
 Expected Output [[ command-output-box:Command Output Box ]]:
 Statistics which include total cost incurred due to food wastage, top 3 common tags and top 3 items with the highest value.
+
+{% include page-break.html %}
 
 ### Help
 
