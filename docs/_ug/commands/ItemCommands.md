@@ -199,7 +199,7 @@ The command will produce a detailed view of this item.
 
 #### Increment the quantity of an item: `inc`
 
-**Format:**: `inc INDEX [qty/QUANTITY]`
+**Format:** `inc INDEX [qty/QUANTITY]`
 
 > Increments the quantity of the item at the specified index
 
@@ -227,7 +227,7 @@ The command will produce a detailed view of this item.
 
 #### Decrement the quantity of an item: `dec`
 
-**Format:**: `dec INDEX [qty/QUANTITY]`
+**Format:** `dec INDEX [qty/QUANTITY]`
 > Decrements the quantity of the item at the specified index
 
 ```info
